@@ -18,3 +18,21 @@
       case completed 
   }
   ```
+### trait
+* Single, Maybe, Completable을 합쳐서 trait 이라고 하는데, 이 세가지는 일반적인 Observable 보다 좁은 범위의 Observable로 선택적 사용이 가능하다. (좁은 범위의 Observable을 사용하면 가독성을 높일 수 있다.)
+#### Single
+* success 또는 error 이벤트를 한번만 방출한다.
+* success는 next 이벤트와 complete 이벤트를 합친 것과 같다.
+* 파일 저장, 파일 다운로드, 디스크에서의 데이터 로딩과 같이 기본적으로 값을 산출하는 비동기적 연산에 사용된다.
+* success 혹은 error 중 정확히 하나의 이벤트를 방출하는 연산자를 랩핑할 때 유용하다.
+* Observable 뒤에 as Single을 붙여 바꾼다.
+#### Maybe
+* Single과 비슷하지만, 유일하게 다른 것은 성공적으로 complete 되더라도 아무런 값을 방출하지 않는 completed를 갖는다는 것이다.
+* Observable 뒤에 as Maybe를 붙여 바꾼다.
+#### Completable
+* completed 또는 error 만을 방출한다.
+* Observable을 completable로 바꿀 수 없다.
+  * Observable은 각 요소를 방출할 수 있는데 Completable은 completed 또는 error 만을 방출하기 때문에 각 요소를 방출한 이상 이것을 Completable로 바꿀 수는 없다.
+* Completable create를 통해 생성할 수 있다.
+
+	
