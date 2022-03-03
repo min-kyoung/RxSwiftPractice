@@ -18,7 +18,7 @@
       case completed 
   }
   ```
-### trait
+### traits
 * Single, Maybe, Completable을 합쳐서 trait 이라고 하는데, 이 세가지는 일반적인 Observable 보다 좁은 범위의 Observable로 선택적 사용이 가능하다. (좁은 범위의 Observable을 사용하면 가독성을 높일 수 있다.)
 #### Single
 * success 또는 error 이벤트를 한번만 방출한다.
@@ -34,5 +34,17 @@
 * Observable을 completable로 바꿀 수 없다.
   * Observable은 각 요소를 방출할 수 있는데 Completable은 completed 또는 error 만을 방출하기 때문에 각 요소를 방출한 이상 이것을 Completable로 바꿀 수는 없다.
 * Completable create를 통해 생성할 수 있다.
+	
+### Subject
+* 앱 개발에서는 실시간으로 Observable에 새로운 값을 수동으로 추가하고 subsciber에게 방출하도록 하는 것이 필요하다. 다시 말해 Observable이자 Observer가 필요한 것인데 이것을 Subject라고 부른다.
+#### PublishSubject 
+* 빈 상태로 시작하여 새로운 값 만을 subscriber애 방출한다.
+* 구독된 순간 새로운 이벤트 수신을 알리고 싶을 때 유용하다.
+* 구독을 멈추거나 completed, error 이벤트를 통해서 subject가 완전히 종료될 때까지 계속된다.
+#### BehaviorSubject
+* 마지막 next 이벤트를 새로운 구독자에게 반복하는 것으로,  하나의 초기값을 가진 상태로 시작하여 새로운 subscriber애게 초기값 또는 최신값을 방출한다.
+#### ReplaySubject
+* subject를 생성할 때, 특정 크기까지 방출하는 최신 요소를 일시적으로 버퍼로 둔다. 그 후 버퍼로 둔 것들을 버퍼 사이즈 만큼의 값들을 유지하면서 새로운 subscriber에게 방출한다.
+
 
 	
