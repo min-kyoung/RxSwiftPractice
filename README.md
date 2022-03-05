@@ -50,4 +50,6 @@
 * Observable의 이벤트를 입력받아서 결과로 출력하는 연산자이다.
 * 다양한 형태로 값을 걸러내거나, 변환하거나 합친다.
 #### Filtering Operator
-* next 이벤트를 통해 받아오는 값을 선택적으로 취할 수 있다.
+* next 이벤트를 통해 받아오는 값을 선택적으로 취할 수 있다. 
+#### Transforming Operator
+* Observable에서 방출된 값들을 다른 형태로 바꿔 변형된 값으로 방출한다.
