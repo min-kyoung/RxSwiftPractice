@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		71620BBBF791F45AA28BFF38 /* Pods-RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		A928193127D11CAE00AAAA68 /* TransformingOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A93488D427CA5223002E373F /* Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Traits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A95669B727CE2503004BBE91 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A971843B27CF83680033E986 /* FilteringOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -62,6 +63,7 @@
 				A93488D427CA5223002E373F /* Traits.playground */,
 				A95669B727CE2503004BBE91 /* Subject.playground */,
 				A971843B27CF83680033E986 /* FilteringOperators.playground */,
+				A928193127D11CAE00AAAA68 /* TransformingOperator.playground */,
 				A9A6651727C4D13700347034 /* RxSwiftPractice */,
 				A9A6651627C4D13700347034 /* Products */,
 				2BFA938FD6B418AA4A8C94E9 /* Pods */,
