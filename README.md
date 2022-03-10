@@ -53,3 +53,7 @@
 * next 이벤트를 통해 받아오는 값을 선택적으로 취할 수 있다. 
 #### Transforming Operator
 * Observable에서 방출된 값들을 다른 형태로 바꿔 변형된 값으로 방출한다.
+#### Combining Operator
+* Filtering, Transforming Operator와 시퀀스의 출력값을 핸들링해서 결과로 방출한다는 점은 동일하나 다수의 시퀀스를 조합한다는 점에서 다르다.
+#### Time Based Operator
+* 시간에 따라 시퀀스의 이벤트 방출이나 구독을 제어한다.
